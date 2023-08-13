@@ -6,38 +6,71 @@
   <link href="./index.css" rel="stylesheet" type="text/css">
   <title>Document</title>
 </head>
-<body>
-  <header>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+<div style="display: grid;grid-template-columns: repeat(1,1fr);">
     <div>
-      <img src="./images/headerGif.gif" width="100%" height="auto" >
+    <div>
+      <img class="headerGif" src="./images/headerGif.gif">
     </div>
     <div style="float: right;margin: 0.64vw 0.32vw 0.64vw;">
-      <img id="menu-icon" src="./images/more.svg" alt="more-icon" width="40vw" height="25vw">
+      <img style="float: right;" id="menu-icon" src="./images/more.svg" alt="more-icon" width="40vw" height="25vw">
+      <span class="span-category" style="float: right;font-size: 1.5vw;margin-left: 5px;">دسته بندی کالاها</span>
     </div>
-    <nav id="menu">
-      <ul>
-        <li>خواروبار</li>
-        <li>لبنیات</li>
-        <li>محصولات پروتئینی</li>
-        <li>کنسرو و غذای آماده</li>
-        <li>نوشیدنی ها</li>
-        <li>صبحانه</li>
-        <li>تنقلات</li>
-        <li>آجیل و خشکبار</li>
-        <li>چاشنی و ادویه جات</li>
-        <li>میوه و سبزیجات</li>
-      </ul>
-    </nav>
     <div style="float: right;">
       <form>
-        <input id="search-box" class="search-box" type="text" name="search" placeholder="جستجو...">
+        <input id="search-box" class="search-box" type="text" name="search-box" autocomplete="on" placeholder="جستجو...">
       </form>
     </div>
-    <div style="float: left;">
-      <p id="content"></p>
+    <div class="shopping-cart">
+      <img class="shopping-cart-icon" src="./images/shopping_cart.jpg" alt="" width="55vw">
     </div>
-  </header>
+    <div class="logo">
+      <img class="logo-icon" src="./images/19logo.svg" alt="" width="120vw">
+    </div>
+    <div class="login">
+      <img class="login-icon" src="./images/login.png" alt="" width="50vw">
+    </div>
+  </div>
+  <div style="float: right;">
+    <form>
+      <input id="search-box1" class="search-box1" type="text" name="search-box1" autocomplete="on" placeholder="جستجو...">
+    </form>
+  </div>
+  <div>
+    <button class="btn option">جدیدترین</button>
+    <button class="btn option">پرفروش ترین</button>
+    <button class="btn option">بالاترین امتیاز</button>
+    <button class="btn option">ارزان ترین</button>
+    <button class="btn option">گران ترین</button>
+  </div>
   
+  <div id="product-list" class="product-list">
+
+  </div>  
+
+  <div id="poster-container">
+    <img id="poster" src="" alt="Poster Image" width="100%">
+    <div><img src="./images/left.png" id="previous-btn"  alt="" ></div>
+    <div><img src="./images/right.png" id="next-btn"  alt=""></div>
+</div>
+  
+
+</div>
+
+<nav id="menu">
+  <ul>
+    <li>خواروبار</li>
+    <li>لبنیات</li>
+    <li>محصولات پروتئینی</li>
+    <li>کنسرو و غذای آماده</li>
+    <li>نوشیدنی ها</li>
+    <li>صبحانه</li>
+    <li>تنقلات</li>
+    <li>آجیل و خشکبار</li>
+    <li>چاشنی و ادویه جات</li>
+    <li>میوه و سبزیجات</li>
+  </ul>
+</nav>
   <script src="./index.js"></script>
 </body>
 </html>
