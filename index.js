@@ -112,7 +112,7 @@ else{
   var image = document.createElement('div');
   A.style.display = 'grid';
   A.style.gridTemplateColumns = 'repeat(2,1fr)';
-  mydiv.innerHTML =  '<h3 style="color:#000000;text-align: right;width: 85%;margin: 25% 0% 0% 0%;font-size: 15px;">گوشی سامسونگ s20 ظرفیت 64 گیگ با رم 8 گیگ</h3>'+
+  mydiv.innerHTML =  '<h3 style="color:#000000;text-align: right;width: 85%;margin: 25% 0% 0% 0%;font-size: 15px;">گوشی سامسونگ a01 core با ظرفیت 16 گیگابایت و دوربین 13 مگاپیکسل</h3>'+
                         '<p style="color:#ff0000;font-size: 8px;margin-top:10%;float:right;">10%</p>'+
                         '<p style="color:#000000;font-size: 8px;margin-top:10%;float:right;"><del>2/200/000تومان </del></p>'+
                         '<p style="color:#000000;display:inline-block;font-size: 15px;margin-right:65%;margin-top:-8%;">4.2</p>'+
