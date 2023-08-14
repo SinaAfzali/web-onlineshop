@@ -138,3 +138,24 @@ setProducts();
 setProducts();
 setProducts();
 
+
+
+
+function focus_btn(id){
+  document.getElementById('active-focus1').style.backgroundColor = '#fff';
+  document.getElementById('active-focus1').style.color = 'black';
+  document.getElementById('active-focus2').style.backgroundColor = '#fff';
+  document.getElementById('active-focus2').style.color = 'black';
+  document.getElementById('active-focus3').style.backgroundColor = '#fff';
+  document.getElementById('active-focus3').style.color = 'black';
+  document.getElementById('active-focus4').style.backgroundColor = '#fff';
+  document.getElementById('active-focus4').style.color = 'black';
+  document.getElementById('active-focus5').style.backgroundColor = '#fff';
+  document.getElementById('active-focus5').style.color = 'black';
+
+  document.getElementById(id).style.backgroundColor = 'dodgerblue';
+  document.getElementById(id).style.color = 'white';
+
+}
+
+

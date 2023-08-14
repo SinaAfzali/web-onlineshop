@@ -114,22 +114,23 @@ header {
 
 
 
-.btn {
-  border: none;
-  color: white;
-  padding: 14px 28px;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  width: 9vw;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  min-width: 140px;
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  background-color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bolder;
+  border-radius: 5px;
+  margin-bottom: 1vw;
 }
 
-.option {background-color: #feba0e; color: black;} 
-.option:hover {background: #eaa906;width:12vw;font-size: 20px;min-width: 160px;}
-.option:focus {background: #09d8df;width:12vw;font-size: 20px;min-width: 160px;}
-
+.pill-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
 
 #poster-container {
@@ -169,16 +170,25 @@ header {
   .product-list{
     grid-template-columns: repeat(4,1fr);
   }
+  .pill-nav a {
+    font-size: 14px;
+  }
 }
 @media (max-width: 920px){
   .product-list{
     grid-template-columns: repeat(3,1fr);
+  }
+  .pill-nav a {
+    font-size: 12px;
   }
 }
 @media (max-width: 768px){
   .product-list{
     grid-template-columns: repeat(2,1fr);
   }
+  .pill-nav a {
+    font-size: 10px;
+  }
   .headerGif{
     width: 100%;
     height: 10vw;
@@ -230,26 +240,14 @@ header {
     background-color: #ccc;
     font-size: 15px;
   }
-  .btn {
-    border: none;
-    color: white;
-    padding: 7px 14px;
-    font-size: 10px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 18vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-width: 40px;
-  }
-  .option {background-color: #feba0e; color: black;} 
-  .option:hover {background: #eaa906;width:22vw;font-size: 8px;min-width: 40px;}
-  .option:focus {background: #09d8df;width:22vw;font-size: 8px;min-width: 40px;}
-
 }
 @media (max-width: 539px){
   .product-list{
     grid-template-columns: repeat(1,1fr);
   }
+  .pill-nav a {
+    font-size: 8px;
+  }
   .headerGif{
     width: 100%;
     height: 10vw;
@@ -301,25 +299,13 @@ header {
     background-color: #ccc;
     font-size: 15px;
   }
-  .btn {
-    border: none;
-    color: white;
-    font-size: 1.5vw;
-    font-weight: bold;
-    cursor: pointer;
-    width: 18vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-width: 40px;
-  }
-  .option {background-color: #feba0e; color: black;} 
-  .option:hover {background: #eaa906;width:22vw;font-size: 8px;min-width: 40px;}
-  .option:focus {background: #09d8df;width:22vw;font-size: 8px;min-width: 40px;}
-
-
 }
 @media (max-width: 300px){
   .product-list{
     grid-template-columns: repeat(1,1fr);
+  }
+  .pill-nav a {
+    font-size: 5px;
   }
   .headerGif{
     width: 100%;
@@ -375,22 +361,6 @@ header {
     background-color: #ccc;
     font-size: 15px;
   }
-  .btn {
-    border: none;
-    color: white;
-    padding: 7px 14px;
-    font-size: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    width: 18vw;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-width: 40px;
-  }
-  .option {background-color: #feba0e; color: black;} 
-  .option:hover {background: #eaa906;width:22vw;font-size: 8px;min-width: 40px;}
-  .option:focus {background: #09d8df;width:22vw;font-size: 8px;min-width: 40px;}
-
-
 }
 
 
