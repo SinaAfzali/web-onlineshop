@@ -67,6 +67,8 @@ var interval = setInterval(autoChangePoster, 6000);
 
 //#endregion
 
+
+
 function createCodeRand(){
   var codeRand = '';
   for(var r = 0 ; r<6;r++){
@@ -78,32 +80,61 @@ function createCodeRand(){
 return codeRand;
 }
 
+
+
 function setProducts(){
+
 var productList = document.querySelector('#product-list');
 for(var n = 2;n<56;n++){
 if(n == 4)n++;
+  var A = document.createElement('a');
   var newProduct = document.createElement('div');
 var addressImage = './images/'+n+'.jpg';
 var str = createCodeRand();
-if(window.innerWidth <= 415){
-  newProduct.style.display = 'grid';
-  newProduct.style.gridTemplateColumns = 'repeat(2,1fr)';
-}
+str = 'PRODUCT'+str;
+
+newProduct.style.border = '1px solid #f2f5e8';
+newProduct.style.backgroundColor = 'rgba(255, 255, 255, 1)';
 newProduct.classList.add(str);
-if(window.innerWidth > 415){
-newProduct.innerHTML = '<img style="margin-left: 10%;margin-right: 10%;margin-top: 15%;" src="'+addressImage+'" alt="'+'image of product'+'" width75%" height="50%">'+
-                        '<p style="text-align: center;width: 70%;margin-left: 15%;margin-right: 15%;font-size: 1.1vmax;">گوشی سامسونگ s20 ظرفیت 64 گیگ با رم 8 گیگ    </p>';
+newProduct.id = str;
+A.href = '#';
+A.style.textDecoration = 'none';
+if(window.innerWidth > 539){
+A.innerHTML = '<img style="margin-left: 15%;margin-right: 15%;margin-top: 15%;" src="'+addressImage+'" alt="'+'image of product'+'" width="70%" height="45%">'+
+                        '<h3 style="color:#000000;text-align: right;width: 85%;margin-left: 5%;margin-right: 10%;font-size: 14px;">گوشی سامسونگ a01 core با ظرفیت 16 گیگابایت و دوربین 13 مگاپیکسل</h3>'+
+                        '<p style="color:#ff0000;font-size: 13px;float:right;">10%</p>'+
+                        '<p style="color:#000000;font-size: 12px;float:right;"><del>2/200/000تومان </del></p>'+
+                        '<p style="color:#000000;display:inline-block;font-size: 15px;margin-right:65%;margin-top:-10%;">4.2</p>'+
+                        '<img style="float:left;margin-left: 10%;margin-top:1%;" src="./images/star.png" alt="point" width="6%">'+
+                        '<span style="font-size:20px;color:#000000;float:left;margin-left:10%;">2/000/000تومان </span>';
 }
 else{
-  newProduct.innerHTML = '<img style="margin-bottom: 10%;margin-top: 10%;" src="'+addressImage+'" alt="'+'image of product'+'" width="100%" height="auto">'+
-                        '<p style="text-align: right;width: 85%;margin: 30% 0% 0% 15%;font-size: 1.1vmax;">گوشی سامسونگ s20 ظرفیت 64 گیگ با رم 8 گیگ    </p>';
+  var mydiv = document.createElement('div');
+  var image = document.createElement('div');
+  A.style.display = 'grid';
+  A.style.gridTemplateColumns = 'repeat(2,1fr)';
+  mydiv.innerHTML =  '<h3 style="color:#000000;text-align: right;width: 85%;margin: 25% 0% 0% 0%;font-size: 15px;">گوشی سامسونگ s20 ظرفیت 64 گیگ با رم 8 گیگ</h3>'+
+                        '<p style="color:#ff0000;font-size: 8px;margin-top:10%;float:right;">10%</p>'+
+                        '<p style="color:#000000;font-size: 8px;margin-top:10%;float:right;"><del>2/200/000تومان </del></p>'+
+                        '<p style="color:#000000;display:inline-block;font-size: 15px;margin-right:65%;margin-top:-8%;">4.2</p>'+
+                        '<img style="float:left;margin-left: 15%;margin-top:2%;" src="./images/star.png" alt="point" width="6%">'+
+                        '<span style="font-size:17px;color:#000000;float:left;margin-left:15%;">2/000/000تومان </span>';
+
+  image.innerHTML = '<img style="margin-bottom: 10%;margin-top: 10%;" src="'+addressImage+'" alt="'+'image of product'+'" width="100%" height="80%">';
+  A.appendChild(image);
+  A.appendChild(mydiv);
 }
 
-
+newProduct.appendChild(A);
 productList.appendChild(newProduct);
 }
 }
 
+
+
+
+
 setProducts();
 setProducts();
 setProducts();
+
