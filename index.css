@@ -121,7 +121,7 @@ header {
   padding: 14px;
   background-color: #fff;
   text-decoration: none;
-  font-size: 2.1vw;
+  font-size: 1.3vw;
   font-weight: bold;
   border-radius: 5px;
   margin-bottom: 1vw;
@@ -170,15 +170,24 @@ header {
   .product-list{
     grid-template-columns: repeat(4,1fr);
   }
+  .pill-nav a {
+    font-size: 1.7vw;
+  }
 }
 @media (max-width: 920px){
   .product-list{
     grid-template-columns: repeat(3,1fr);
   }
+  .pill-nav a {
+    font-size: 1.7vw;
+  }
 }
 @media (max-width: 768px){
   .product-list{
     grid-template-columns: repeat(2,1fr);
+  }
+  .pill-nav a {
+    font-size: 2vw;
   }
   .headerGif{
     width: 100%;
@@ -236,6 +245,9 @@ header {
   .product-list{
     grid-template-columns: repeat(1,1fr);
   }
+  .pill-nav a {
+    font-size: 2.2vw;
+  }
   .headerGif{
     width: 100%;
     height: 10vw;
@@ -291,6 +303,9 @@ header {
 @media (max-width: 300px){
   .product-list{
     grid-template-columns: repeat(1,1fr);
+  }
+  .pill-nav a {
+    font-size: 2vw;
   }
   .headerGif{
     width: 100%;
