@@ -95,7 +95,6 @@ str = 'PRODUCT'+str;
 
 newProduct.style.border = '1px solid #f2f5e8';
 newProduct.style.backgroundColor = 'rgba(255, 255, 255, 1)';
-newProduct.classList.add(str);
 newProduct.id = str;
 A.href = '#';
 A.style.textDecoration = 'none';
