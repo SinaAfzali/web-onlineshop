@@ -121,7 +121,7 @@ header {
   padding: 14px;
   background-color: #fff;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bolder;
   border-radius: 5px;
   margin-bottom: 1vw;
@@ -171,7 +171,7 @@ header {
     grid-template-columns: repeat(4,1fr);
   }
   .pill-nav a {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 920px){
@@ -179,7 +179,7 @@ header {
     grid-template-columns: repeat(3,1fr);
   }
   .pill-nav a {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 768px){
@@ -187,7 +187,7 @@ header {
     grid-template-columns: repeat(2,1fr);
   }
   .pill-nav a {
-    font-size: 10px;
+    font-size: 12px;
   }
   .headerGif{
     width: 100%;
@@ -246,7 +246,7 @@ header {
     grid-template-columns: repeat(1,1fr);
   }
   .pill-nav a {
-    font-size: 8px;
+    font-size: 10px;
   }
   .headerGif{
     width: 100%;
