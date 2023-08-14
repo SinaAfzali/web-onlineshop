@@ -119,6 +119,7 @@ header {
   color: white;
   padding: 14px 28px;
   font-size: 15px;
+  font-weight: bold;
   cursor: pointer;
   width: 9vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -234,6 +235,7 @@ header {
     color: white;
     padding: 7px 14px;
     font-size: 10px;
+    font-weight: bold;
     cursor: pointer;
     width: 18vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -302,8 +304,8 @@ header {
   .btn {
     border: none;
     color: white;
-    padding: 7px 14px;
-    font-size: 6px;
+    font-size: 1.5vw;
+    font-weight: bold;
     cursor: pointer;
     width: 18vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -378,6 +380,7 @@ header {
     color: white;
     padding: 7px 14px;
     font-size: 6px;
+    font-weight: bold;
     cursor: pointer;
     width: 18vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
